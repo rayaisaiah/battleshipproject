@@ -60,8 +60,22 @@ var gameBoard = [
 				[1,0,0,0,0,0,0,0,0,0]
 				]
 
+var x = userInput.substring(0,1);
+var column = userInput.substring(1,2);
+
+row = letterConversion[x];
+
+var coordinate = gameboard[row][column]
+
+if (coordinate == 1){
+	boardSquare == $("#colorChangeText").css("background-color";
+}
+else {
+
+}
+
 function fireTorpedo() {
 
- var userInput = $("#fireInput").val();
+var userInput = $("#fireInput").val();
 
 }
