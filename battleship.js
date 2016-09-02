@@ -60,21 +60,35 @@ var gameBoard = [
 				[1,0,0,0,0,0,0,0,0,0]
 				]
 
-var x = userInput.substring(0,1);
-var column = userInput.substring(1,2);
+ var row;
+ var x;
+ var column;
+ var torpedo;
+ var first;
+ var second;
+ var converted;
 
-row = letterConversion[x];
-
-var coordinate = gameboard[row][column]
-
-if (coordinate == 1){
-	boardSquare == $("#colorChangeText").css("background-color";
-}
-else {
-
-}
 
 function fireTorpedo() {
+
+torpedo = document.getElementById("fireInput").value;
+	 x = torpedo.substring(0, 1);
+	 	row = letterConversion[x];
+column = torpedo.substring(1, 3);
+
+
+
+	//var coordinate = gameboard[row][column];
+
+	if (gameBoard[row][column - 1] == 1){
+
+		document.getElementById("s" + row + (column - 1)).style.background = "red";
+	}
+	else {
+
+			document.getElementById("s" + row + (column - 1)).style.background = "grey";
+
+	}
 
 var userInput = $("#fireInput").val();
 
