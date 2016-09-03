@@ -68,6 +68,7 @@ var gameBoard = [
  var second;
  var converted;
  var hitHolder = 0;
+ 
 
 
 function fireTorpedo() {
@@ -83,7 +84,7 @@ column = torpedo.substring(1, 3);
 
 	if (gameBoard[row][column - 1] == 1){
 
-		document.getElementById("s" + row + (column - 1)).style.background = "red";
+		document.getElementById("s" + row + (column - 1)).style.background =  "red";
     hitHolder + 1;
 	}
 	else {

@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
     max-width: 950px;
-    background-image: url("https://writescience.files.wordpress.com/2013/07/pacificocean.jpg");
+    background-image: url("http://www.psdgraphics.com/file/blue-abstract-background.jpg");
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
 p, button, input {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: black;
 	margin-bottom:1em;
 }
 
