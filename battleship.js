@@ -68,7 +68,7 @@ var gameBoard = [
  var second;
  var converted;
  var hitHolder = 0;
- 
+
 
 
 function fireTorpedo() {
@@ -92,9 +92,14 @@ column = torpedo.substring(1, 3);
 			document.getElementById("s" + row + (column - 1)).style.background = "grey";
 
 	}
-	if (hitHolder == 17) {
-			document.getElementById("").textContent;
+
+	if (hitHolder = 17) {
+		$("#instructions").text("YOU SUNK ALL MY BATTLESHIPS!");
 	}
+	else {
+		
+	}
+
 	var userInput = $("#fireInput").val();
 
 	}
