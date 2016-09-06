@@ -93,13 +93,12 @@ column = torpedo.substring(1, 3);
 
 	}
 
-	if (hitHolder = 17) {
+	if (hitHolder = 1) {
 		$("#instructions").text("YOU SUNK ALL MY BATTLESHIPS!");
-	}
-	else {
-		
-	}
+	
+    }
+}
+
+
 
 	var userInput = $("#fireInput").val();
-
-	}
