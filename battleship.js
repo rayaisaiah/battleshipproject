@@ -68,8 +68,10 @@ var gameBoard = [
  var second;
  var converted;
  var hitHolder = 0;
+ var guessholder = 0;
 
-
+ var gameoverString = "YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='reloadFunction()'class = 'torpedo'>RESTART?</button> </br>"
+var guessholderstring = "";
 
 function fireTorpedo() {
 
@@ -85,21 +87,26 @@ column = torpedo.substring(1, 3);
 	if (gameBoard[row][column - 1] == 1){
 
 		document.getElementById("s" + row + (column - 1)).style.background =  "red";
-    hitHolder + 1;
+    hitHolder += 1;
+		guessholder += 1;
 	}
 	else {
 
 			document.getElementById("s" + row + (column - 1)).style.background = "grey";
-
+      guessholder += 1;
 	}
 
-	if (hitHolder = 1) {
-		$("#instructions").html("YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='myFunction()'class = 'torpedo'>RESTART?</button>");
+	if (hitHolder == 1) {
+    guessholderstring = "You did it in " + guessholder + " guesses! GREAT JOB!";
+
+		gameoverString += guessholderstring;
+
+		$("#instructions").html(gameoverString);
 
     }
 }
 
-function myFunction() {
+function reloadFunction() {
 window.location.reload();
 }
 
