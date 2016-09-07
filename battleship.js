@@ -94,9 +94,13 @@ column = torpedo.substring(1, 3);
 	}
 
 	if (hitHolder = 1) {
-		$("#instructions").text("YOU SUNK ALL MY BATTLESHIPS!");
-	
+		$("#instructions").html("YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='myFunction()'class = 'torpedo'>RESTART?</button>");
+
     }
+}
+
+function myFunction() {
+window.location.reload();
 }
 
 
