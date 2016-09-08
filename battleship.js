@@ -101,6 +101,7 @@ column = torpedo.substring(1, 3);
 
 		gameoverString += guessholderstring;
 
+
 		$("#instructions").html(gameoverString);
 
     }
