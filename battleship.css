@@ -34,6 +34,7 @@ p, button, input {
 	border: 1px solid #ddd;
 	width:50px;
 	height:50px;
+  color: white;
 }
 
 .boardSquare {
