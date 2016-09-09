@@ -79,14 +79,14 @@ torpedo = document.getElementById("fireInput").value;
 	 x = torpedo.substring(0, 1);
 	 	row = letterConversion[x];
 column = torpedo.substring(1, 3);
-
+document.getElementById('cannon.mp3').play() ;
 
 
 	//var coordinate = gameboard[row][column];
 
 	if (gameBoard[row][column - 1] == 1){
 
-		document.getElementById("s" + row + (column - 1)).style.background =  "red";
+		document.getElementById("s" + row + (column - 1)).style.background = "red";
     hitHolder += 1;
 		guessholder += 1;
 	}
@@ -110,6 +110,12 @@ column = torpedo.substring(1, 3);
 function reloadFunction() {
 window.location.reload();
 }
+
+
+
+
+
+
 
 
 
