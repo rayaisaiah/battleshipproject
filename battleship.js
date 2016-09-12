@@ -69,7 +69,7 @@ var gameBoard = [
  var converted;
  var hitHolder = 0;
  var guessholder = 0;
-
+ var sounf = new Audio('cannon.mp3');
  var gameoverString = "YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='reloadFunction()'class = 'torpedo'>RESTART?</button> </br>"
 var guessholderstring = "";
 
@@ -79,7 +79,7 @@ torpedo = document.getElementById("fireInput").value;
 	 x = torpedo.substring(0, 1);
 	 	row = letterConversion[x];
 column = torpedo.substring(1, 3);
-document.getElementById('cannon.mp3').play() ;
+
 
 
 	//var coordinate = gameboard[row][column];
@@ -105,6 +105,7 @@ document.getElementById('cannon.mp3').play() ;
 		$("#instructions").html(gameoverString);
 
     }
+		sounf.play();
 }
 
 function reloadFunction() {
