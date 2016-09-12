@@ -70,6 +70,7 @@ var gameBoard = [
  var hitHolder = 0;
  var guessholder = 0;
  var sound = new Audio('cannon.mp3');
+ var endSound = new Audio('ending.mp3')
  var gameoverString = "YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='reloadFunction()'class = 'torpedo'>RESTART?</button> </br>"
 var guessholderstring = "";
 
