@@ -69,7 +69,7 @@ var gameBoard = [
  var converted;
  var hitHolder = 0;
  var guessholder = 0;
- var sounf = new Audio('cannon.mp3');
+ var sound = new Audio('cannon.mp3');
  var gameoverString = "YOU SUNK ALL MY BATTLESHIPS!</br> <button onclick='reloadFunction()'class = 'torpedo'>RESTART?</button> </br>"
 var guessholderstring = "";
 
@@ -96,7 +96,7 @@ column = torpedo.substring(1, 3);
       guessholder += 1;
 	}
 
-	if (hitHolder == 1) {
+	if (hitHolder == 17) {
     guessholderstring = "You did it in " + guessholder + " guesses! GREAT JOB!";
 
 		gameoverString += guessholderstring;
@@ -105,7 +105,7 @@ column = torpedo.substring(1, 3);
 		$("#instructions").html(gameoverString);
 
     }
-		sounf.play();
+		sound.play();
 }
 
 function reloadFunction() {
